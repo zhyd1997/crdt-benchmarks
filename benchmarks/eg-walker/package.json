@@ -1,7 +1,8 @@
 {
   "name": "eg-walker-benchmarks",
+  "benchmarkName": "softmaple/eg-walker",
   "version": "1.0.0",
-  "description": "Eg-walker benchmarks",
+  "description": "softmaple/eg-walker benchmarks",
   "main": "./run.js",
   "type": "module",
   "scripts": {
@@ -10,7 +11,7 @@
     "start": "npm run measure-bundle && node --expose-gc run.js && npm run table",
     "start:bun": "npm run measure-bundle && bun run run.js && npm run table",
     "start:browser": "rollup -c && 0serve -o benchmark.html",
-    "table": "echo 'Eg-walker results: \n\n' && node ../../bin/render-table.js ../results.json 6000 eg-walker",
+    "table": "echo 'softmaple/eg-walker results: \n\n' && node ../../bin/render-table.js ../results.json 6000 softmaple/eg-walker",
     "dist": "npm run clean && rollup -c && gzip --keep dist/*"
   },
   "author": "Kevin Jahns",

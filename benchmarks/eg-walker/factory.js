@@ -2,7 +2,7 @@ import { AbstractCrdt, CrdtFactory } from '../../js-lib/index.js' // eslint-disa
 import { EgWalkerReplica, OPERATION_TYPE } from '@softmaple/eg-walker'
 import * as error from 'lib0/error'
 
-export const name = 'eg-walker'
+export const name = 'softmaple/eg-walker'
 
 const textEncoder = new TextEncoder()
 const textDecoder = new TextDecoder()

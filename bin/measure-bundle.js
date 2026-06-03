@@ -9,7 +9,7 @@ const filesToAdd = process.argv.slice(2)
 
 const currDir = process.cwd()
 const pkg = JSON.parse(fs.readFileSync(currDir + '/package.json', 'utf8'))
-const name = pkg.name.match(/(.*)-benchmarks$/)[1]
+const name = pkg.benchmarkName || pkg.name.match(/(.*)-benchmarks$/)[1]
 
 const addedFileSizes = filesToAdd.map(file => fs.statSync(join(currDir, file)).size).reduce(math.add, 0)
 const gzAddedFileSizes = filesToAdd.map(file => {

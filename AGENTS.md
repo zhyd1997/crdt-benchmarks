@@ -13,6 +13,7 @@ Current benchmark workspaces are:
 - `benchmarks/loro`
 - `benchmarks/automerge`
 - `benchmarks/automerge-wasm`
+- `benchmarks/eg-walker` (`softmaple/eg-walker`)
 - `benchmarks/diamond-types`
 
 The main architectural split is:
